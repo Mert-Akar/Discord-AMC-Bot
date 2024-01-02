@@ -28,6 +28,7 @@ async def gimme(ctx, contest_type : int = commands.parameter(default=37, descrip
         chosen_problem = choice(amc12_problem_list)
     else:
         await ctx.send("AMC contest type must be 10 or 12")
+        return
 
     text = str(chosen_problem)[0:-4].upper().split('/') ## last 4 chars were .png so I discarded them
     text = ' '.join(text)
