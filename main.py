@@ -20,7 +20,6 @@ add_to_list(amc10_problem_list, pathlib.Path("amc/10"))
 add_to_list(amc12_problem_list, pathlib.Path("amc/12")) ## prepares problem lists
 
 @bot.command(description='Recommends random problem from past AMC10/AMC12 contests')
-@commands.cooldown(rate=1, per=10)
 async def gimme(ctx, contest_type : int = commands.parameter(default=37, description="AMC contest choice from {10,12}")):
     if contest_type == 10:
         chosen_problem = choice(amc10_problem_list)
