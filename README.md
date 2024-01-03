@@ -1,6 +1,8 @@
 # Discord-AMC-Bot
 Discord bot for recommending random problems from past AMC contests.
 
+**I do not claim the rights to the AMC problems; they are publicly released on the AoPS website, found [here](https://artofproblemsolving.com/wiki/index.php/AMC_Problems_and_Solutions). The code is released under the MIT License.**
+
 # Syntax
 Help command : `^help`
 
